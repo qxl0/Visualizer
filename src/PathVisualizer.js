@@ -59,7 +59,10 @@ function PathVisualizer() {
   const handleClear = () => {
     setIsStart(false);
     setIsEnd(false);
+    startNode = null;
+    endNode = null;
     setIsAddWall(false);
+    setAddWallInprogress(false);
     setStatus("");
     setGrid([])
     setTimeout(() => {
