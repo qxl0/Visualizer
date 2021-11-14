@@ -34,7 +34,7 @@ function PathVisualizer() {
     console.log("Grid inited!!!!")
     setGrid(initGrid())
     console.log("grid:", grid.length)
-  }, [])
+  }, [grid.length])
   const handleAddStart = (e) => {
     // set the flag
     setIsStart(true);
